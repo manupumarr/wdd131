@@ -1,0 +1,26 @@
+@media screen and (min-width: 768px) {
+
+    /* --- HEADER & NAV --- */
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        width: auto;
+        background-color: transparent;
+        gap: 20px;
+    }
+
+    .navigation a {
+        padding: 0.5rem 1rem;
+        border: none;
+    }
+
+    .navigation a:hover {
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+        border-radius: 4px;
+    }
