@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate of Mérida, Venezuela</title>
+    <meta name="description" content="Climate and geographical data page for Mérida, Venezuela. WDD131.">
+    <meta name="author" content="Manuel Pumar">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Mérida, Venezuela</h1>
+    </header>
+
+    <main>
+        <div class="hero-box">
+            
+            <picture>
+                <source srcset="images/merida-large.webp" media="(min-width: 1000px)">
+                <img src="images/merida-small.webp" alt="Landscape of the Andes in Mérida" width="400" height="200">
+            </picture>
+
+            <div class="data-card">
+                <h2>Data</h2>
+                <ul>
+                    <li><span class="label">Area:</span> 113 km²</li>
+                    <li><span class="label">Population:</span> 330,000</li>
+                    <li><span class="label">Capital:</span> Mérida</li>
+                    <li><span class="label">Language:</span> Spanish</li>
+                    <li><span class="label">Currency:</span> Bolívar (VS)</li>
+                    <li><span class="label">Time Zone:</span> GMT-4</li>
+                </ul>
+            </div>
+
+            <div class="weather-card">
+                <h2>Weather</h2>
+                <svg class="weather-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="50" height="50">
+                    <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/>
+                </svg>
+                
+                <div class="weather-data">
+                    <p><span class="label">Temperature:</span> <span id="temp">10</span>°C</p>
+                    <p><span class="label">Conditions:</span> Cloudy</p>
+                    <p><span class="label">Wind:</span> <span id="wind">5</span> km/h</p>
+                    <p><span class="label">Wind Chill:</span> <span id="chill"></span></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> • Manuel Pumar • Zulia, Venezuela</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>
