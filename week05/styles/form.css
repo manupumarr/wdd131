@@ -1,0 +1,84 @@
+:root {
+    --primary: #770705;
+    --accent: #fff714;
+    --bg: #f8f8fa;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--bg);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.review-form {
+    max-width: 600px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input[type="text"], 
+input[type="date"], 
+select, 
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+fieldset {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.rating label {
+    display: inline-block;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    background-color: var(--primary);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #550504;
+}
+
+.required { color: red; }
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}

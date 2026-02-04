@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Confirmed</title>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body style="text-align: center; padding-top: 50px;">
+    <h1>Thank you for your review!</h1>
+    <p>Your opinion helps us improve Infinite Store.</p>
+    <div id="counter-display" style="font-size: 1.2rem; margin: 20px; color: var(--primary);">
+        Has completado <span id="review-count">0</span> reseñas.
+    </div>
+    <a href="form.html" style="color: var(--primary);">Escribir otra reseña</a>
+
+    <script>
+        let reviewCount = Number(window.localStorage.getItem("reviewCount-ls")) || 0;
+        reviewCount++;
+        window.localStorage.setItem("reviewCount-ls", reviewCount);
+        document.querySelector("#review-count").textContent = reviewCount;
+    </script>
+</body>
+</html>
