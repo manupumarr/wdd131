@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Review - Infinite Store</title>
+    <meta name="description" content="Comparte tu experiencia con los productos personalizados de Infinite Store. Tu reseña sobre nuestra calidad de sublimación nos ayuda a mejorar.">
+    <meta name="author" content="Manuel Pumar">
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/form.js" defer></script>
 </head>
@@ -22,11 +24,20 @@
             <fieldset>
                 <legend>Overall Rating <span class="required">*</span></legend>
                 <div class="rating">
-                    <label><input type="radio" name="rating" value="5" required> &#9733;&#9733;&#9733;&#9733;&#9733;</label>
-                    <label><input type="radio" name="rating" value="4"> &#9733;&#9733;&#9733;&#9733;&#9734;</label>
-                    <label><input type="radio" name="rating" value="3"> &#9733;&#9733;&#9733;&#9734;&#9734;</label>
-                    <label><input type="radio" name="rating" value="2"> &#9733;&#9733;&#9734;&#9734;&#9734;</label>
-                    <label><input type="radio" name="rating" value="1"> &#9733;&#9734;&#9734;&#9734;&#9734;</label>
+                    <input type="radio" id="star5" name="rating" value="5" required>
+                    <label for="star5">&#9733;&#9733;&#9733;&#9733;&#9733;</label>
+                    
+                    <input type="radio" id="star4" name="rating" value="4">
+                    <label for="star4">&#9733;&#9733;&#9733;&#9733;&#9734;</label>
+                    
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label for="star3">&#9733;&#9733;&#9733;&#9734;&#9734;</label>
+                    
+                    <input type="radio" id="star2" name="rating" value="2">
+                    <label for="star2">&#9733;&#9733;&#9734;&#9734;&#9734;</label>
+                    
+                    <input type="radio" id="star1" name="rating" value="1">
+                    <label for="star1">&#9733;&#9734;&#9734;&#9734;&#9734;</label>
                 </div>
             </fieldset>
 
@@ -35,10 +46,19 @@
 
             <fieldset>
                 <legend>Which features did you find useful?</legend>
-                <label><input type="checkbox" name="features" value="durability"> Durability</label>
-                <label><input type="checkbox" name="features" value="design"> Design</label>
-                <label><input type="checkbox" name="features" value="easeOfUse"> Ease of Use</label>
-                <label><input type="checkbox" name="features" value="performance"> Performance</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="durability" name="features" value="durability">
+                    <label for="durability">Durability</label>
+
+                    <input type="checkbox" id="design" name="features" value="design">
+                    <label for="design">Design</label>
+
+                    <input type="checkbox" id="easeOfUse" name="features" value="easeOfUse">
+                    <label for="easeOfUse">Ease of Use</label>
+
+                    <input type="checkbox" id="performance" name="features" value="performance">
+                    <label for="performance">Performance</label>
+                </div>
             </fieldset>
 
             <label for="review">Written Review (Optional)</label>
