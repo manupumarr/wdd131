@@ -335,7 +335,9 @@ legend {
 
 .submit-btn:hover {
     background-color: var(--accent-color);
-    color: black;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    transition: 0.3s ease;
 }
 
 .required { color: #d9534f; }
